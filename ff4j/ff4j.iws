@@ -5,12 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faf18eeb-1b72-4591-9eee-b395975bdd59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/auth/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/entity/AbstractAuditEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/entity/RoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/entity/converter/RoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/svc/impl/UserDetailSvcImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/tec/ff4j/repository/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ff4j.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ff4j.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ff4j.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/config/FF4jWebConsoleSecure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/config/FF4jWebConsoleSecure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sql/releases/V1.0.1__security.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sql/releases/V1.0.1__security.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sql/sample_data/users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sql/sample_data/users.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/tec/ff4j/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tec/ff4j/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -70,23 +92,20 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ff4j" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ff4j" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ff4j" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -127,9 +146,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.UserRepositoryTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -156,6 +176,38 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;org.tec.ff4j.repository.UserRepositoryTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -187,6 +239,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.UserRepositoryTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
@@ -212,7 +269,8 @@
       <updated>1600481887799</updated>
       <workItem from="1600481888919" duration="13203000" />
       <workItem from="1600547846158" duration="254000" />
-      <workItem from="1600548135362" duration="47000" />
+      <workItem from="1600548135362" duration="9808000" />
+      <workItem from="1600623980270" duration="14535000" />
     </task>
     <task id="LOCAL-00001" summary="initial checkin with working console and security">
       <created>1600547552556</created>
@@ -221,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600547552556</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial checkin with working console and security">
+      <created>1600548235682</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600548235682</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,17 +312,68 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2" timestamp="1600547552355">
+    <state x="641" y="116" width="501" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1600639956592">
       <screen x="67" y="27" width="1533" height="768" />
     </state>
-    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2/67.27.1533.768@67.27.1533.768" timestamp="1600547552355" />
-    <state x="337" y="45" key="SettingsEditor" timestamp="1600548184835">
+    <state x="641" y="116" width="501" height="587" key="#com.intellij.ide.util.MemberChooser/67.27.1533.768@67.27.1533.768" timestamp="1600639956592" />
+    <state x="573" y="237" width="511" height="346" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1600623883049">
       <screen x="67" y="27" width="1533" height="768" />
     </state>
-    <state x="337" y="45" key="SettingsEditor/67.27.1533.768@67.27.1533.768" timestamp="1600548184835" />
+    <state x="573" y="237" width="511" height="346" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1533.768@67.27.1533.768" timestamp="1600623883049" />
+    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2" timestamp="1600548235282">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2/67.27.1533.768@67.27.1533.768" timestamp="1600548235282" />
+    <state width="1487" height="317" key="GridCell.Tab.0.bottom" timestamp="1600649404778">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state width="1487" height="317" key="GridCell.Tab.0.bottom/67.27.1533.768@67.27.1533.768" timestamp="1600649404778" />
+    <state width="1487" height="317" key="GridCell.Tab.0.center" timestamp="1600649404777">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state width="1487" height="317" key="GridCell.Tab.0.center/67.27.1533.768@67.27.1533.768" timestamp="1600649404777" />
+    <state width="1487" height="317" key="GridCell.Tab.0.left" timestamp="1600649404777">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state width="1487" height="317" key="GridCell.Tab.0.left/67.27.1533.768@67.27.1533.768" timestamp="1600649404777" />
+    <state width="1487" height="317" key="GridCell.Tab.0.right" timestamp="1600649404778">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state width="1487" height="317" key="GridCell.Tab.0.right/67.27.1533.768@67.27.1533.768" timestamp="1600649404778" />
+    <state width="1487" height="317" key="GridCell.Tab.1.bottom" timestamp="1600649404779">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state width="1487" height="317" key="GridCell.Tab.1.bottom/67.27.1533.768@67.27.1533.768" timestamp="1600649404779" />
+    <state width="1487" height="317" key="GridCell.Tab.1.center" timestamp="1600649404778">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state width="1487" height="317" key="GridCell.Tab.1.center/67.27.1533.768@67.27.1533.768" timestamp="1600649404778" />
+    <state width="1487" height="317" key="GridCell.Tab.1.left" timestamp="1600649404778">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state width="1487" height="317" key="GridCell.Tab.1.left/67.27.1533.768@67.27.1533.768" timestamp="1600649404778" />
+    <state width="1487" height="317" key="GridCell.Tab.1.right" timestamp="1600649404779">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state width="1487" height="317" key="GridCell.Tab.1.right/67.27.1533.768@67.27.1533.768" timestamp="1600649404779" />
+    <state x="337" y="45" key="SettingsEditor" timestamp="1600649485915">
+      <screen x="67" y="27" width="1533" height="768" />
+    </state>
+    <state x="337" y="45" key="SettingsEditor/67.27.1533.768@67.27.1533.768" timestamp="1600649485915" />
     <state x="496" y="116" width="672" height="678" key="search.everywhere.popup" timestamp="1600543846805">
       <screen x="67" y="27" width="1533" height="768" />
     </state>
     <state x="496" y="116" width="672" height="678" key="search.everywhere.popup/67.27.1533.768@67.27.1533.768" timestamp="1600543846805" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/tec/ff4j/repository/UserRepositoryTest.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -7,25 +7,15 @@ import org.ff4j.FF4j;
 import org.ff4j.core.Feature;
 import org.ff4j.web.FF4jDispatcherServlet;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.sql.DataSource;
-
-import java.util.List;
 import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes={App.class})
@@ -42,9 +32,6 @@ class AppTest {
 
     @Autowired
     FF4jDispatcherServlet ff4jDispatcherServlet;
-
-    @Autowired
-    JdbcUserDetailsManager jdbcUserDetailsManager;
 
     @Autowired
     PasswordEncoder passwordEncoder;
@@ -98,6 +85,7 @@ class AppTest {
         group2.entrySet().stream().forEach(e -> Assertions.assertFalse(e.getValue().isEnable()));
     }
 
+/*
     @Test
     @Tag("exclude")
     void testCreateUser(){
@@ -123,4 +111,5 @@ class AppTest {
         Assertions.assertTrue(passwordEncoder.matches(password, actual.getPassword()));
         Assertions.assertEquals(actual.isEnabled(), !disabled);
     }
+*/
 }

@@ -20,3 +20,8 @@
 ## security
 - [Srping](https://spring.io/projects/spring-security)
 - [jdbc backed user store](https://www.websparrow.org/spring/spring-security-jdbc-authentication-with-spring-boot)
+- [custom user detail service](https://www.javadevjournal.com/spring/spring-security-userdetailsservice/)
+
+## jpa stuff...
+- [linked tables](https://attacomsian.com/blog/spring-data-jpa-one-to-many-mapping)
+- [lombok and jpa/hibernate](https://thorben-janssen.com/lombok-hibernate-how-to-avoid-common-pitfalls/)

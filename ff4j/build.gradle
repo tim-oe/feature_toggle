@@ -105,6 +105,7 @@ dependencies {
     implementation 'org.ff4j:ff4j-store-springjdbc:1.8.9'
 
     implementation'commons-codec:commons-codec'
+    implementation'org.apache.commons:commons-lang3'
 
     //mariadb
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
