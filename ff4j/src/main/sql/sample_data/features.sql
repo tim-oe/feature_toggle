@@ -44,3 +44,12 @@ INSERT INTO FF4J_FEATURES
 (FEAT_UID, ENABLE, DESCRIPTION, GROUPNAME)
 VALUES ('sample_gp2_disable', false, 'sample enabled feature for group 1', @group_name);;
 
+-- role based feature
+
+INSERT INTO FF4J_FEATURES
+(FEAT_UID, ENABLE, DESCRIPTION)
+VALUES ('admin_feature', true, 'sample admin role feature');;
+
+INSERT INTO FF4J_ROLES
+(FEAT_UID, ROLE_NAME)
+values('admin_feature', 'ADMIN');;

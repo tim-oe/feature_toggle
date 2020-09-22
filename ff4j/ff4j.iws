@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faf18eeb-1b72-4591-9eee-b395975bdd59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ff4j.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ff4j.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ff4j.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ff4j.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/config/FeatureToggleConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/config/FeatureToggleConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sql/sample_data/features.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sql/sample_data/features.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/tec/ff4j/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tec/ff4j/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +253,7 @@
       <workItem from="1600481888919" duration="13203000" />
       <workItem from="1600547846158" duration="254000" />
       <workItem from="1600548135362" duration="9808000" />
-      <workItem from="1600623980270" duration="17968000" />
+      <workItem from="1600623980270" duration="20051000" />
     </task>
     <task id="LOCAL-00001" summary="initial checkin with working console and security">
       <created>1600547552556</created>
@@ -281,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600663205745</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added security manager">
+      <created>1600789783422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600789783422</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +306,8 @@
     </ignored-roots>
     <MESSAGE value="initial checkin with working console and security" />
     <MESSAGE value="refactored with custom user details service" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored with custom user details service" />
+    <MESSAGE value="added security manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="added security manager" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -316,10 +319,10 @@
       <screen x="67" y="27" width="1533" height="768" />
     </state>
     <state x="573" y="237" width="511" height="346" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1533.768@67.27.1533.768" timestamp="1600623883049" />
-    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2" timestamp="1600663205530">
+    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2" timestamp="1600789783263">
       <screen x="67" y="27" width="1533" height="768" />
     </state>
-    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2/67.27.1533.768@67.27.1533.768" timestamp="1600663205530" />
+    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2/67.27.1533.768@67.27.1533.768" timestamp="1600789783263" />
     <state width="1487" height="317" key="GridCell.Tab.0.bottom" timestamp="1600649404778">
       <screen x="67" y="27" width="1533" height="768" />
     </state>

@@ -90,7 +90,30 @@ class AppTest {
         group2.entrySet().stream().forEach(e -> Assertions.assertFalse(e.getValue().isEnable()));
     }
 
-/*
+    @Test
+    @WithMockUser(username="admin",authorities = {"ADMIN"})
+    void testAdminFeatureAdmin() {
+        String adminFeature = "admin_feature";
+        Assertions.assertTrue(ff4j.exist(adminFeature));
+
+        Assertions.assertTrue(ff4j.getFeature(adminFeature).isEnable());
+        Assertions.assertTrue(ff4j.getFeature(adminFeature).getPermissions().contains("ADMIN"));
+
+        Assertions.assertTrue(ff4j.check(adminFeature));
+    }
+
+    @Test
+    @WithMockUser(username="user",authorities = {"USER"})
+    void testAdminFeatureUser() {
+        String adminFeature = "admin_feature";
+        Assertions.assertTrue(ff4j.exist(adminFeature));
+
+        Assertions.assertTrue(ff4j.getFeature(adminFeature).isEnable());
+        Assertions.assertFalse(ff4j.getFeature(adminFeature).getPermissions().contains("USER"));
+
+        Assertions.assertFalse(ff4j.check(adminFeature));
+    }
+    /*
     @Test
     @Tag("exclude")
     void testCreateUser(){
