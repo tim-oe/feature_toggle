@@ -4,6 +4,7 @@ import org.ff4j.FF4j;
 import org.ff4j.audit.repository.EventRepository;
 import org.ff4j.audit.repository.JdbcEventRepository;
 import org.ff4j.cache.InMemoryCacheManager;
+import org.ff4j.security.SpringSecurityAuthorisationManager;
 import org.ff4j.springjdbc.store.FeatureStoreSpringJdbc;
 import org.ff4j.springjdbc.store.PropertyStoreSpringJdbc;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +25,6 @@ public class FeatureToggleConfig {
     @Bean
     public FF4j getFF4j() {
         FF4j ff4j = new FF4j();
-
-        //TODO
-        // https://github.com/ff4j/ff4j/wiki/Store-Technologies#aws-ssm-parameter-store
 
 // Feature States in a RDBMS
         FeatureStoreSpringJdbc featureStore= new FeatureStoreSpringJdbc();
@@ -53,6 +51,8 @@ public class FeatureToggleConfig {
 
         // To define a cacher layer to relax the DB, multiple implementations
         ff4j.cache(new InMemoryCacheManager());
+
+        ff4j.setAuthorizationsManager(new SpringSecurityAuthorisationManager());
 
         return ff4j;
     }

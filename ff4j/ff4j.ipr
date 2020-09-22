@@ -61,21 +61,7 @@
     <version value="1.0" />
   </component>
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" />
-    <option name="OPTION_SCOPE" value="protected" />
-    <option name="OPTION_HIERARCHY" value="true" />
-    <option name="OPTION_NAVIGATOR" value="true" />
-    <option name="OPTION_INDEX" value="true" />
-    <option name="OPTION_SEPARATE_INDEX" value="true" />
-    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
-    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
-    <option name="OPTION_DEPRECATED_LIST" value="true" />
     <option name="OTHER_OPTIONS" value="" />
-    <option name="HEAP_SIZE" />
-    <option name="LOCALE" />
-    <option name="OPEN_IN_BROWSER" value="true" />
   </component>
   <component name="ProjectModuleManager">
     <modules>
@@ -701,6 +687,15 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ff4j/ff4j-core/1.8.9/daa9136840b7393b768f777fbe2d59c558bb9c87/ff4j-core-1.8.9-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Gradle: org.ff4j:ff4j-security-spring:1.8.9">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ff4j/ff4j-security-spring/1.8.9/18160a6d4b802b1a4846da04c783be9979721809/ff4j-security-spring-1.8.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ff4j/ff4j-security-spring/1.8.9/3e5f70157c59e9a69891bab7e7cdc3342ea0c668/ff4j-security-spring-1.8.9-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Gradle: org.ff4j:ff4j-spring-boot-autoconfigure:1.8.9">
       <CLASSES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ff4j/ff4j-spring-boot-autoconfigure/1.8.9/2c63135524389d7733efe70c43fabc33349e7874/ff4j-spring-boot-autoconfigure-1.8.9.jar!/" />
@@ -1210,6 +1205,15 @@
       <JAVADOC />
       <SOURCES>
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.3.4.RELEASE/1fde7a4e65e9c6f025264ad62e6d4cb09e527584/spring-security-core-5.3.4.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.springframework.security:spring-security-test:5.3.4.RELEASE">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.3.4.RELEASE/366e566564a96dd5f27e425edceaf41da67e8204/spring-security-test-5.3.4.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.3.4.RELEASE/2c684382cf2814b6cabfff51cf7de9ecc5d3cc27/spring-security-test-5.3.4.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework.security:spring-security-web:5.3.4.RELEASE">

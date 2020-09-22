@@ -12,6 +12,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import javax.sql.DataSource;
@@ -37,6 +38,7 @@ class AppTest {
     PasswordEncoder passwordEncoder;
 
     @Test
+    @WithMockUser(username="admin")
     void testConfig() {
         Assertions.assertNotNull(app);
         Assertions.assertNotNull(dataSource);
@@ -45,6 +47,7 @@ class AppTest {
     }
 
     @Test
+    @WithMockUser(username="admin")
     void testSimpleFT() {
         Assertions.assertTrue(ff4j.exist("sample_enable"));
         Assertions.assertTrue(ff4j.check("sample_enable"));
@@ -54,6 +57,7 @@ class AppTest {
     }
 
     @Test
+    @WithMockUser(username="admin")
     void testDateDrivenFT() {
         Assertions.assertTrue(ff4j.exist("past_feature"));
         Assertions.assertTrue(ff4j.check("past_feature"));
@@ -67,6 +71,7 @@ class AppTest {
     }
 
     @Test
+    @WithMockUser(username="admin")
     void testGroupFT() {
         String groupName1 = "group_1";
         Map<String, Feature> group1 = ff4j.getFeatureStore().readGroup(groupName1);

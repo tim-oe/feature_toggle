@@ -103,6 +103,7 @@ dependencies {
     implementation 'org.ff4j:ff4j-spring-boot-starter:1.8.9'
     implementation 'org.ff4j:ff4j-web:1.8.9'
     implementation 'org.ff4j:ff4j-store-springjdbc:1.8.9'
+    implementation 'org.ff4j:ff4j-security-spring:1.8.9'
 
     implementation'commons-codec:commons-codec'
     implementation'org.apache.commons:commons-lang3'
@@ -119,5 +120,7 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+
+    testImplementation 'org.springframework.security:spring-security-test'
 }
 

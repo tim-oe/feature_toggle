@@ -45,6 +45,7 @@
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.3.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.ff4j:ff4j-web:1.8.9" level="project" />
     <orderEntry type="library" name="Gradle: org.ff4j:ff4j-store-springjdbc:1.8.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.ff4j:ff4j-security-spring:1.8.9" level="project" />
     <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.14" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.10" level="project" />
     <orderEntry type="library" name="Gradle: org.ff4j:ff4j-spring-boot-autoconfigure:1.8.9" level="project" />
@@ -84,6 +85,7 @@
     <orderEntry type="library" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.30" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-jdbc:5.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-core:5.3.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.ff4j:ff4j-spring-services:1.8.9" level="project" />
     <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger2:3.0.0" level="project" />
     <orderEntry type="library" name="Gradle: commons-collections:commons-collections:3.2.2" level="project" />
@@ -102,7 +104,6 @@
     <orderEntry type="library" name="Gradle: org.glassfish:jakarta.el:3.0.3" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.2.9.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-core:5.3.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.9.6" level="project" />
     <orderEntry type="library" name="Gradle: com.zaxxer:HikariCP:3.4.5" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-orm:5.2.9.RELEASE" level="project" />
