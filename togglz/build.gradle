@@ -1,0 +1,126 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.flywaydb.flyway' version '6.5.4'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'org.springframework.boot' version '2.3.4.RELEASE'
+    id 'io.freefair.lombok' version '5.2.1'
+    //id 'git-semantic-versioning' version '1.1'
+    id 'org.sonarqube' version '3.0'
+    id 'org.owasp.dependencycheck' version '6.0.1'
+    id 'jacoco'
+}
+
+flyway {
+    url = "jdbc:mariadb://${db_host}:${db_port}/"
+    user = "${db_username}"
+    password = "${db_password}"
+    schemas = ["feature"]
+    locations = ["filesystem:$rootProject.projectDir/src/main/sql/releases"]
+    placeholderReplacement = false
+}
+
+/**
+ * task to drop and reload the DB
+ * https://docs.gradle.org/current/userguide/tutorial_using_tasks.html
+ * https://discuss.gradle.org/t/how-to-set-up-the-sql-statement-when-calling-ant-sql-task/5743
+ * need to quote the name to leverage dot notation
+ */
+task dbReset {
+    group = 'db'
+    description 'task to drop and reload the DB'
+    dependsOn flywayClean,flywayMigrate
+
+    // this is to have the trigger sps view load after patch scripts
+    doLast {
+        //TODO
+    }
+}
+
+// this is to load the data after the main scripts are run above
+// see https://docs.gradle.org/current/userguide/tutorial_using_tasks.html
+dbReset.doLast {
+    ant.echo("sql url:" + "jdbc:mariadb://${db_host}:${db_port}/feature")
+    ant.echo("project.gradle.gradleUserHomeDir:" + "$project.gradle.gradleUserHomeDir")
+    ant.echo("rootProject.projectDir:" + "$rootProject.projectDir")
+    ant.echo("url:" + "jdbc:mariadb://${db_host}:${db_port}/feature")
+
+    ant.sql(classpath: configurations.db.asPath,
+            driver: 'org.mariadb.jdbc.Driver',
+            url: "jdbc:mariadb://${db_host}:${db_port}/feature",
+            userid: "${db_username}",
+            password: "${db_password}",
+            delimiter: ';;',
+            delimitertype: 'normal'
+    ) {
+        transaction(src: "$rootProject.projectDir/src/main/sql/sample_data/users.sql")
+        transaction(src: "$rootProject.projectDir/src/main/sql/sample_data/features.sql")
+    }
+}
+
+bootJar {
+    mainClassName = 'org.tec.ff4j.App'
+}
+
+test {
+    useJUnitPlatform{
+        excludeTags 'exclude'
+    }
+
+    testLogging.showStandardStreams = true
+    testLogging.showStackTraces = true
+
+    // Always run tests, even when nothing changed.
+    dependsOn 'cleanTest'
+
+    // Show test results.
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url 'https://plugins.gradle.org/m2/'
+    }
+}
+
+configurations {
+    db
+}
+
+dependencies {
+    //spring
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    //togglz
+    implementation 'org.togglz:togglz-console:2.8.0'
+    implementation 'org.togglz:togglz-spring-boot-starter:2.8.0'
+    implementation 'org.togglz:togglz-spring-security:2.8.0'
+
+    implementation'commons-codec:commons-codec'
+    implementation'org.apache.commons:commons-lang3'
+
+    //mariadb
+    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+    //to get ant.sql working
+    db 'org.mariadb.jdbc:mariadb-java-client'
+
+    compileOnly 'org.projectlombok:lombok'
+
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+
+

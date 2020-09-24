@@ -1,0 +1,10 @@
+-- togglz jdbc store
+CREATE TABLE `TOGGLZ`
+(
+    `FEATURE_NAME`    varchar(100) NOT NULL,
+    `FEATURE_ENABLED` TINYINT(1) NOT NULL default 0,
+    `STRATEGY_ID`     varchar(200)  DEFAULT NULL,
+    `STRATEGY_PARAMS` varchar(2000) DEFAULT NULL,
+    PRIMARY KEY (`FEATURE_NAME`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8;

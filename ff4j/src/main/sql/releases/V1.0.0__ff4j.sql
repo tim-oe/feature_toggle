@@ -2,7 +2,7 @@
 -- Main Table to store Features
 CREATE TABLE `FF4J_FEATURES`
 (
-    `FEAT_UID`    VARCHAR(100),
+    `FEAT_UID`    VARCHAR(100) NOT NULL,
     `ENABLE`      TINYINT(1) NOT NULL default 0,
     `DESCRIPTION` VARCHAR(1000),
     `STRATEGY`    VARCHAR(1000),
