@@ -5,40 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faf18eeb-1b72-4591-9eee-b395975bdd59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../togglz/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/auth/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/config/FeatureToggleConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/config/SampleFeatures.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/config/WebConsoleSecure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/entity/AbstractAuditEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/entity/RoleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/entity/converter/RoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/java/org/tec/togglz/svc/impl/UserDetailSvcImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/sql/releases/V1.0.0__togglz.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/sql/releases/V1.0.1__security.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/sql/sample_data/features.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/main/sql/sample_data/users.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/src/test/java/org/tec/togglz/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/togglz.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/togglz.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/togglz.iws" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/togglz.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../togglz/togglz.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sonar-docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ff4j.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ff4j.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ff4j.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/sql/releases/V1.0.0__ff4j.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sql/releases/V1.0.0__ff4j.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/tec/ff4j/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tec/ff4j/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ff4j.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ff4j.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/config/FF4jWebConsoleSecure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/config/FF4jWebConsoleSecure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../togglz/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../togglz/togglz.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/togglz.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../togglz/togglz.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/togglz.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../togglz/togglz.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/togglz.main.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +263,11 @@
       <workItem from="1600547846158" duration="254000" />
       <workItem from="1600548135362" duration="9808000" />
       <workItem from="1600623980270" duration="21921000" />
-      <workItem from="1600903791650" duration="2263000" />
+      <workItem from="1600903791650" duration="7142000" />
+      <workItem from="1600999125817" duration="1335000" />
+      <workItem from="1601000496780" duration="506000" />
+      <workItem from="1601001821374" duration="1983000" />
+      <workItem from="1601004350766" duration="1863000" />
     </task>
     <task id="LOCAL-00001" summary="initial checkin with working console and security">
       <created>1600547552556</created>

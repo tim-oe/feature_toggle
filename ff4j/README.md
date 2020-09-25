@@ -25,3 +25,11 @@
 ## jpa stuff...
 - [linked tables](https://attacomsian.com/blog/spring-data-jpa-one-to-many-mapping)
 - [lombok and jpa/hibernate](https://thorben-janssen.com/lombok-hibernate-how-to-avoid-common-pitfalls/)
+
+## sonarqube container
+- mkdir -p ~/docker/data/sonarqube/logs
+- mkdir -p ~/docker/data/sonarqube/extensions
+- run local instance via docker-compose (sonarComposeUp/sonarComposeDown) 
+- http://loclahost:9000
+- modify systemProp.sonar.host.url in ~/.gradle/gradle.properties
+- [low vm.max_map_count fix](https://stackoverflow.com/questions/51445846/elasticsearch-max-virtual-memory-areas-vm-max-map-count-65530-is-too-low-inc)
