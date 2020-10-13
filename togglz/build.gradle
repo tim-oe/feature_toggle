@@ -1,14 +1,4 @@
 // https://github.com/john-tipper/git-semantic-versioning
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'org.john-tipper.gradle:git-semantic-versioning:1.1'
-    }
-}
-
 plugins {
     id 'java'
     id 'idea'
@@ -19,13 +9,12 @@ plugins {
     id 'org.sonarqube' version '3.0'
     id 'org.owasp.dependencycheck' version '6.0.1'
     id "com.avast.gradle.docker-compose" version "0.13.3"
+    id "io.wusa.semver-git-plugin" version "2.3.1"
     id 'jacoco'
 }
 
-apply plugin: 'git-semantic-versioning'
-
 group = 'org.tec'
-version = "${majorVersion}.${minorVersion}"
+project.version = semver.info
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -79,8 +68,8 @@ bootJar {
         attributes(
                 'Built-By'       : System.properties['user.name'],
                 'Build-Timestamp': new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").format(new Date()),
-                'Build-Revision' : "${majorVersion}.${minorVersion}",
-                'Build-Hash'     : "build number",
+                'Build-Revision' : semver.info,
+                'Build-Hash'     : semver.info.commit,
                 'Created-By'     : "Gradle ${gradle.gradleVersion}",
                 'Build-Jdk'      : "${System.properties['java.version']} (${System.properties['java.vendor']} ${System.properties['java.vm.version']})",
                 'Build-OS'       : "${System.properties['os.name']} ${System.properties['os.arch']} ${System.properties['os.version']}"
@@ -110,7 +99,7 @@ tasks['sonarqube'].dependsOn test, dependencyCheckAnalyze
 
 sonarqube {
     properties {
-        property 'sonar.coverage.exclusions', "**com/outboundengine/config/**"
+        property 'sonar.coverage.exclusions', "**/config/**"
     }
 }
 

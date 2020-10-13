@@ -22,7 +22,7 @@
         <module name="togglz.test" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="14" />
+    <bytecodeTargetLevel target="1.8" />
   </component>
   <component name="CopyrightManager" default="" />
   <component name="DependencyValidationManager">
@@ -205,7 +205,7 @@
       <module fileurl="file://$PROJECT_DIR$/togglz.test.iml" filepath="$PROJECT_DIR$/togglz.test.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="true" project-jdk-name="14" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="14" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="RemoteRepositoriesConfiguration">
@@ -381,13 +381,13 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/3.4.5/44a9f83d5baa78a1c43307400f6b9a95d39980d0/HikariCP-3.4.5-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: commons-codec:commons-codec:1.14">
+    <library name="Gradle: commons-codec:commons-codec:1.5">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.14/3cb1181b2141a7e752f5bdc998b7ef1849f726cf/commons-codec-1.14.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.5/cf993e250ff71804754ec2734a16f23c0be99f70/commons-codec-1.5.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.14/674f0614376ac38259b01bcc67189ef240234569/commons-codec-1.14-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.5/1100638866461d41fbed0e89d722b161c579fe23/commons-codec-1.5-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: jakarta.activation:jakarta.activation-api:1.2.2">
@@ -492,13 +492,13 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ognl/ognl/3.1.12/35e11973363a5f0548e617c615b41194d45b3308/ognl-3.1.12-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.apache.commons:commons-lang3:3.10">
+    <library name="Gradle: org.apache.commons:commons-lang3:3.11">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.10/e155460aaf5b464062a09c3923f089ce99128a17/commons-lang3-3.10.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.11/68e9a6adf7cf8eb7e9d31bbc554c7c75eeaac568/commons-lang3-3.11.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.10/3dc6ed391f8199a461bfbdac4bf6d93f6e439de3/commons-lang3-3.10-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.11/24014867e470db3942db53b17a4902f4215d5ea8/commons-lang3-3.11-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.apache.logging.log4j:log4j-api:2.13.3">
@@ -978,13 +978,13 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.3.4.RELEASE/1fde7a4e65e9c6f025264ad62e6d4cb09e527584/spring-security-core-5.3.4.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: org.springframework.security:spring-security-test:5.3.4.RELEASE">
+    <library name="Gradle: org.springframework.security:spring-security-test:5.4.0">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.3.4.RELEASE/366e566564a96dd5f27e425edceaf41da67e8204/spring-security-test-5.3.4.RELEASE.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.4.0/c2a133e4c0281b8d19004f2e3cc317f9acd5a3fb/spring-security-test-5.4.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.3.4.RELEASE/2c684382cf2814b6cabfff51cf7de9ecc5d3cc27/spring-security-test-5.3.4.RELEASE-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-test/5.4.0/8fc84db96ea1156ff4bc444683839c213b7b9ca5/spring-security-test-5.4.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: org.springframework.security:spring-security-web:5.3.4.RELEASE">

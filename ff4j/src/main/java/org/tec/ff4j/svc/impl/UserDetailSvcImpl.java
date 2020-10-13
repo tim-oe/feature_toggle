@@ -36,15 +36,12 @@ public class UserDetailSvcImpl implements UserDetailsService {
         List<GrantedAuthority> authorities = new ArrayList<>();
 
         ue.getRoles()
-                .stream()
                 .forEach(e -> authorities.add(new SimpleGrantedAuthority(e.getRole().toString())));
 
-        UserDetails user = User.withUsername(ue.getUsername())
+        return User.withUsername(ue.getUsername())
                 .password(ue.getPassword())
                 .disabled(!ue.isEnabled())
                 .authorities(authorities)
                 .build();
-
-        return user;
     }
 }

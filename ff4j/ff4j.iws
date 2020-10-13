@@ -5,20 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faf18eeb-1b72-4591-9eee-b395975bdd59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sonar-docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ff4j.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ff4j.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ff4j.iws" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ff4j.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ff4j.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ff4j.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/config/FF4jWebConsoleSecure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/config/FF4jWebConsoleSecure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/svc/impl/UserDetailSvcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tec/ff4j/svc/impl/UserDetailSvcImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../togglz/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../togglz/togglz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/togglz.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../togglz/togglz.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/togglz.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../togglz/togglz.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/togglz.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../togglz/togglz.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/togglz.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../togglz/togglz.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../togglz/togglz.test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,17 +171,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -267,7 +256,10 @@
       <workItem from="1600999125817" duration="1335000" />
       <workItem from="1601000496780" duration="506000" />
       <workItem from="1601001821374" duration="1983000" />
-      <workItem from="1601004350766" duration="2188000" />
+      <workItem from="1601004350766" duration="4204000" />
+      <workItem from="1601523808814" duration="29000" />
+      <workItem from="1602477556916" duration="41000" />
+      <workItem from="1602477639507" duration="650000" />
     </task>
     <task id="LOCAL-00001" summary="initial checkin with working console and security">
       <created>1600547552556</created>

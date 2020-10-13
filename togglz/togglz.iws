@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a0db93a-55a6-4856-9350-5c774727ad30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ff4j/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ff4j/sonar-docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sonar-docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ff4j/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ff4j/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ff4j/ff4j.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/ff4j.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ff4j/ff4j.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/ff4j.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ff4j/ff4j.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/ff4j.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ff4j/ff4j.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/ff4j.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ff4j/ff4j.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/ff4j.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ff4j/src/main/java/org/tec/ff4j/config/FF4jWebConsoleSecure.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/src/main/java/org/tec/ff4j/config/FF4jWebConsoleSecure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ff4j/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ff4j/src/main/java/org/tec/ff4j/svc/impl/UserDetailSvcImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ff4j/src/main/java/org/tec/ff4j/svc/impl/UserDetailSvcImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/togglz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/togglz.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/togglz.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/togglz.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/togglz.iws" beforeDir="false" afterPath="$PROJECT_DIR$/togglz.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/togglz.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/togglz.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/togglz.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/togglz.test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +78,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="togglz" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -168,17 +161,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -234,7 +216,8 @@
       <updated>1600904197386</updated>
       <workItem from="1600904198583" duration="6315000" />
       <workItem from="1600999096424" duration="23000" />
-      <workItem from="1601004728944" duration="1722000" />
+      <workItem from="1601004728944" duration="2429000" />
+      <workItem from="1601523804994" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="initial pass at togglz impl">
       <created>1600909920901</created>
@@ -250,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601007065970</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sonar docker integration">
+      <created>1601007097123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601007097123</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,10 +258,10 @@
       <screen x="67" y="27" width="1533" height="768" />
     </state>
     <state x="641" y="116" width="374" height="587" key="#com.intellij.ide.util.MemberChooser/67.27.1533.768@67.27.1533.768" timestamp="1600904766063" />
-    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2" timestamp="1600909920491">
+    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2" timestamp="1601007096965">
       <screen x="67" y="27" width="1533" height="768" />
     </state>
-    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2/67.27.1533.768@67.27.1533.768" timestamp="1600909920491" />
+    <state x="435" y="27" width="786" height="768" key="CommitChangelistDialog2/67.27.1533.768@67.27.1533.768" timestamp="1601007096965" />
     <state x="337" y="45" key="SettingsEditor" timestamp="1600904609834">
       <screen x="67" y="27" width="1533" height="768" />
     </state>
